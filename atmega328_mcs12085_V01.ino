@@ -26,7 +26,6 @@
 ///      GND 6 =|       |= 3 SDIO
 ///      VDD 7 =|       |= 2 OSC_OUT
 ///     REFA 8 =|_______|= 1 OSC_IN
-
 ///
 /// References:
 /// MCS-12085 data sheet: http://d1.amobbs.com/bbs_upload782111/files_19/ourdev_489767.pdf
@@ -57,7 +56,6 @@ void loop() {
   Serial.print("dx=");
   Serial.print(xVal);
   Serial.print(", dy=");
-  Serial.println(yVal);
-  
+  Serial.println(yVal);  
 
 }
