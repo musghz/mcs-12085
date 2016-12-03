@@ -41,15 +41,16 @@
 int xVal, yVal;
 
 void setup() {
-  Serial.begin(115200);
+  
+  Serial.begin(230400);
   mcs12085_init();
+  delay(100); // need some delay before the first query
 
 }
 
 void loop() {
-
-  // delay < 28 ms doesn't seem to work
-  delay(28);
+  
+  delay(10);
   // calling these in quick succession seems to work faster
   xVal = mcs12085_dx(); // distance moved in dots (-127 to 128)
   yVal = mcs12085_dy(); // distance moved in dots (-127 to 128)
